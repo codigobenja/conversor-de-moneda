@@ -1,14 +1,18 @@
 package com.aluracursos.conversordemoneda.principal;
 
 import com.aluracursos.conversordemoneda.conexion.Conexion;
+import com.aluracursos.conversordemoneda.modelos.Moneda;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Principal {
     public static void main(String[] args) throws IOException, InterruptedException {
         int opcion = 0;
         double valorConvertir=0;
+        List<Moneda> monedas = new ArrayList<>();
         Conexion miConexion = new Conexion();
         String menu = """
                 ********************************************************
@@ -34,6 +38,7 @@ public class Principal {
         Scanner teclado = new Scanner(System.in);
         while (opcion != 14){
             System.out.println(menu);
+            System.out.println("Ingrese una opcion");
             opcion = teclado.nextInt();
 
             switch (opcion){
@@ -75,7 +80,7 @@ public class Principal {
                 case 8:
                     System.out.println("Ingrese el valor que deseas convertir");
                     valorConvertir = teclado.nextDouble();
-                    miConexion.RealizarConexion("CLP","ÜSD",valorConvertir);
+                    miConexion.RealizarConexion("CLP","USD",valorConvertir);
                     break;
                 case 9:
                     System.out.println("Ingrese el valor que deseas convertir");
@@ -85,7 +90,7 @@ public class Principal {
                 case 10:
                     System.out.println("Ingrese el valor que deseas convertir");
                     valorConvertir = teclado.nextDouble();
-                    miConexion.RealizarConexion("COP","ÜSD",valorConvertir);
+                    miConexion.RealizarConexion("COP","USD",valorConvertir);
                     break;
                 case 11:
                     System.out.println("Ingrese el valor que deseas convertir");
@@ -95,7 +100,7 @@ public class Principal {
                 case 12:
                     System.out.println("Ingrese el valor que deseas convertir");
                     valorConvertir = teclado.nextDouble();
-                    miConexion.RealizarConexion("MXN","ÜSD",valorConvertir);
+                    miConexion.RealizarConexion("MXN","USD",valorConvertir);
                     break;
                 case 13:
                     Scanner tecladoVariables = new Scanner(System.in);
@@ -109,6 +114,7 @@ public class Principal {
                     break;
                 case 14:
                     System.out.println("Gracias por usar nuestros servicios");
+                    miConexion.CloseConexion();
                     break;
                 default:
                     System.out.println("Opcion no valida");
