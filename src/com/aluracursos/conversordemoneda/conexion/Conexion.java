@@ -38,13 +38,20 @@ public class Conexion {
         String json = response.body();
 
         MonedaExchangeRate monedaExRa = gson.fromJson(json, MonedaExchangeRate.class);
+        try {
+            Moneda miMoneda = new Moneda(monedaExRa, montoConvertir);
+            System.out.println(miMoneda.getBaseCode()+ " "+ miMoneda.getMontoBase()+" a "+ miMoneda.getTargetCode()+ " Son: "+ miMoneda.getConversionResult()+ " con un factor de conversion: "+ miMoneda.getConversionRate());
+            monedasJson.add(miMoneda);
+            monedas.add(miMoneda.toString());
+        }
+        catch (Exception e)
+        {
+            System.out.println("Ha ocurrido un error con el codigo de las divisas a convertir, favor de ingresar una divisa valida");
+            System.out.println("En el siguiente sitio web puede encontrar un listado de los codigos de divisas: https://es.iban.com/currency-codes");
+        }
 
-        Moneda miMoneda = new Moneda(monedaExRa, montoConvertir);
 
-        System.out.println(miMoneda.getBaseCode()+ " "+ miMoneda.getMontoBase()+" a "+ miMoneda.getTargetCode()+ " Son: "+ miMoneda.getConversionResult()+ " con un factor de conversion: "+ miMoneda.getConversionRate());
 
-        monedasJson.add(miMoneda);
-        monedas.add(miMoneda.toString());
     }
 
     public void CloseConexion() throws IOException {
