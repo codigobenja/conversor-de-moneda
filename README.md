@@ -27,3 +27,5 @@ El Conversor de Divisas es el primer desafío de la ruta backend de ONE. Este pr
 - Obtenga el valor equivalente en la moneda deseada.
 - Explore el historial de consultas en el archivo JSON generado.
 - Revise el archivo de registro de conversiones para obtener un seguimiento detallado de las conversiones realizadas.
+
+ ![](https://i.imgur.com/dPGgQuw.mp4)
