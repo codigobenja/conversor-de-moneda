@@ -28,4 +28,8 @@ El Conversor de Divisas es el primer desafío de la ruta backend de ONE. Este pr
 - Explore el historial de consultas en el archivo JSON generado.
 - Revise el archivo de registro de conversiones para obtener un seguimiento detallado de las conversiones realizadas.
 
- ![](https://i.imgur.com/dPGgQuw.mp4)
+
+
+
+https://github.com/codigobenja/conversor-de-moneda/assets/35717432/5a46840b-2226-420e-891e-67d97ad1ac9a
+
