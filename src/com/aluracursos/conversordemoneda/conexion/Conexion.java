@@ -57,13 +57,13 @@ public class Conexion {
     public void CloseConexion() throws IOException {
         LocalDateTime hoy = LocalDateTime.now();
 
-        FileWriter escritura = new FileWriter("monedas"+"_"+hoy.getDayOfMonth()+"_"+ hoy.getMonth()+"_"+ hoy.getYear()+"-"+hoy.getHour()+"-"+ hoy.getMinute()+".json");
-        escritura.write(gson.toJson(monedasJson));
-        escritura.close();
-
-        FileWriter escrituraJson = new FileWriter("monedas"+"_"+hoy.getDayOfMonth()+"_"+ hoy.getMonth()+"_"+ hoy.getYear()+"-"+hoy.getHour()+"-"+ hoy.getMinute()+".txt");
-        escrituraJson.write(gson.toJson(monedas));
+        FileWriter escrituraJson = new FileWriter("monedas"+"_"+hoy.getDayOfMonth()+"_"+ hoy.getMonth()+"_"+ hoy.getYear()+"-"+hoy.getHour()+"-"+ hoy.getMinute()+".json");
+        escrituraJson.write(gson.toJson(monedasJson));
         escrituraJson.close();
+
+        FileWriter escritura = new FileWriter("monedas"+"_"+hoy.getDayOfMonth()+"_"+ hoy.getMonth()+"_"+ hoy.getYear()+"-"+hoy.getHour()+"-"+ hoy.getMinute()+".txt");
+        escritura.write(gson.toJson(monedas));
+        escritura.close();
 
     }
 }

@@ -58,6 +58,7 @@ public class Principal {
                     }
                     else{
                         System.out.println("vuelva a escoger su opcion e ingrese un valor valido");
+                        System.out.println("recuerde ingresar un numero mayor a cero, y en caso de contar con centavos solo es necesario 1 punto.");
                     }
                     break;
                 case 2:
@@ -70,6 +71,7 @@ public class Principal {
                     }
                     else{
                         System.out.println("vuelva a escoger su opcion e ingrese un valor valido");
+                        System.out.println("recuerde ingresar un numero mayor a cero, y en caso de contar con centavos solo es necesario 1 punto.");
                     }
                     break;
                 case 3:
@@ -82,6 +84,7 @@ public class Principal {
                     }
                     else{
                         System.out.println("vuelva a escoger su opcion e ingrese un valor valido");
+                        System.out.println("recuerde ingresar un numero mayor a cero, y en caso de contar con centavos solo es necesario 1 punto.");
                     }
                     break;
                 case 4:
@@ -94,6 +97,7 @@ public class Principal {
                     }
                     else{
                         System.out.println("vuelva a escoger su opcion e ingrese un valor valido");
+                        System.out.println("recuerde ingresar un numero mayor a cero, y en caso de contar con centavos solo es necesario 1 punto.");
                     }
                     break;
                 case 5:
@@ -106,6 +110,7 @@ public class Principal {
                     }
                     else{
                         System.out.println("vuelva a escoger su opcion e ingrese un valor valido");
+                        System.out.println("recuerde ingresar un numero mayor a cero, y en caso de contar con centavos solo es necesario 1 punto.");
                     }
                     break;
                 case 6:
@@ -118,6 +123,7 @@ public class Principal {
                     }
                     else{
                         System.out.println("vuelva a escoger su opcion e ingrese un valor valido");
+                        System.out.println("recuerde ingresar un numero mayor a cero, y en caso de contar con centavos solo es necesario 1 punto.");
                     }
                     break;
                 case 7:
@@ -130,6 +136,7 @@ public class Principal {
                     }
                     else{
                         System.out.println("vuelva a escoger su opcion e ingrese un valor valido");
+                        System.out.println("recuerde ingresar un numero mayor a cero, y en caso de contar con centavos solo es necesario 1 punto.");
                     }
                     break;
                 case 8:
@@ -142,6 +149,7 @@ public class Principal {
                     }
                     else{
                         System.out.println("vuelva a escoger su opcion e ingrese un valor valido");
+                        System.out.println("recuerde ingresar un numero mayor a cero, y en caso de contar con centavos solo es necesario 1 punto.");
                     }
                     break;
                 case 9:
@@ -154,6 +162,7 @@ public class Principal {
                     }
                     else{
                         System.out.println("vuelva a escoger su opcion e ingrese un valor valido");
+                        System.out.println("recuerde ingresar un numero mayor a cero, y en caso de contar con centavos solo es necesario 1 punto.");
                     }
                     break;
                 case 10:
@@ -166,6 +175,7 @@ public class Principal {
                     }
                     else{
                         System.out.println("vuelva a escoger su opcion e ingrese un valor valido");
+                        System.out.println("recuerde ingresar un numero mayor a cero, y en caso de contar con centavos solo es necesario 1 punto.");
                     }
                     break;
                 case 11:
@@ -178,6 +188,7 @@ public class Principal {
                     }
                     else{
                         System.out.println("vuelva a escoger su opcion e ingrese un valor valido");
+                        System.out.println("recuerde ingresar un numero mayor a cero, y en caso de contar con centavos solo es necesario 1 punto.");
                     }
                     break;
                 case 12:
@@ -190,6 +201,7 @@ public class Principal {
                     }
                     else{
                         System.out.println("vuelva a escoger su opcion e ingrese un valor valido");
+                        System.out.println("recuerde ingresar un numero mayor a cero, y en caso de contar con centavos solo es necesario 1 punto.");
                     }
                     break;
                 case 13:
@@ -208,7 +220,8 @@ public class Principal {
                                 miConexion.RealizarConexion(monedaB,monedaD,valorConvertir);
                             }
                             else{
-                                System.out.println("vuelva a escoger su opcion e ingrese un valor valido");
+                                System.out.println("vuelva a escoger su opcion e ingrese un valor valido.");
+                                System.out.println("recuerde ingresar un numero mayor a cero, y en caso de contar con centavos solo es necesario 1 punto.");
                             }
                         }else{
                             System.out.println("vuelva a escoger su opcion e ingrese un valor valido");
